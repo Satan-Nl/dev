@@ -1,6 +1,6 @@
 {
   "name": "TWRP Build Environment",
-  "image": "mcr.microsoft.com/devcontainers/ubuntu:22.04",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
@@ -16,7 +16,9 @@
   },
   "postCreateCommand": "bash .devcontainer/post-create.sh",
   "remoteUser": "root",
-  "mounts": [],
+  "mounts": [
+    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+  ],
   "forwardPorts": [],
   "portsAttributes": {},
   "remoteEnv": {
