@@ -72,7 +72,7 @@ EOF
 echo "=== TWRP Build Environment Ready ==="
 echo ""
 echo "To build TWRP for Xiaomi Merlin (MT6768):"
-echo "1. repo init -u https://github.com/minimal-manifest-twrp/android_manifest_twrp.git -b twrp-11.0 -g default,-mips,-darwin,-windows"
+echo "1. repo init -u https://github.com/minimal-manifest-twrp/android_manifest_twrp_aosp.git -b twrp-11.0 -g default,-mips,-darwin,-windows"
 echo "2. repo sync --force-sync (or add specific device manifests)"
 echo "3. source build/envsetup.sh"
 echo "4. lunch twrp_merlin-user"
