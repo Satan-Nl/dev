@@ -19,7 +19,7 @@ apt-get install -y \
   grep \
   imagemagick \
   lib32z1-dev \
-  lib32ncurses5 \
+  lib32ncurses-dev \
   libc6-dev \
   libcap-dev \
   libexpat1-dev \
